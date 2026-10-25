@@ -1,5 +1,5 @@
 """
-Builds assets/terminal.svg — an animated market terminal for the GitHub profile.
+Builds terminal.svg — an animated market terminal for the GitHub profile.
 
 Data (all free, no API keys):
   - BTC / ETH daily prices and 24h change ...... CoinGecko
@@ -19,9 +19,9 @@ from fontTools.varLib.instancer import instantiateVariableFont
 from fontTools.pens.svgPathPen import SVGPathPen
 from fontTools.pens.transformPen import TransformPen
 
-ROOT = Path(__file__).resolve().parent.parent
-FONT = ROOT / "assets" / "Archivo.ttf"
-OUT = ROOT / "assets" / "terminal.svg"
+ROOT = Path(__file__).resolve().parent
+FONT = ROOT / "Archivo.ttf"
+OUT = ROOT / "terminal.svg"
 
 # ---------------------------------------------------------------- palette
 BG, PANEL, RULE = "#0d1117", "#11161d", "#232a33"
@@ -278,7 +278,7 @@ def build(d):
     o.append(f'<g clip-path="url(#tape)"><g transform="translate(0 {H - 32})">'
              f'<g class="tape" style="--half:{half:.0f}px">{"".join(tape)}</g></g></g>')
 
-    stamp = dt.datetime.now(dt.timezone.utc).strftime("Updated %d %b %Y, %H:%M UTC")
+    stamp = dt.datetime.now(dt.timezone.utc).strftime("Updated %d %b %Y, %H:%M UTC") + "   |   CoinGecko, FRED, alternative.me"
     t, _ = text(stamp, L, H - 82, 11.5, 430, 100, FAINT); o.append(t)
 
     css = """
