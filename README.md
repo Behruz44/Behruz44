@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/terminal.svg" alt="Behruz Abdumanapov — Software Engineer. Live BTC and ETH charts with macro indicators" width="100%" />
+  <img src="./terminal.svg" alt="Behruz Abdumanapov — Software Engineer. Live BTC and ETH charts with macro indicators" width="100%" />
 </p>
 
 I build backend and distributed systems for finance: payment platforms, trading systems and AI integration. I design each system end to end and build it myself, from architecture and data to CI/CD and deployment.
