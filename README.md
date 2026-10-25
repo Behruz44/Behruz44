@@ -2,9 +2,7 @@
   <img src="./terminal.svg" alt="Behruz Abdumanapov — Software Engineer. Live BTC and ETH charts with macro indicators" width="100%" />
 </p>
 
-I build backend and distributed systems for finance: payment platforms, trading systems and AI integration. I design each system end to end and build it myself, from architecture and data to CI/CD and deployment.
-
-Alongside engineering I study markets and macroeconomics: liquidity, rates and how they move crypto. The terminal above updates itself every six hours with live data.
+I build backend systems where money moves: payments, trading and AI integration, designed and shipped end to end on my own. The terminal above runs on live market and macro data and updates itself every six hours.
 
 ### Featured
 
